@@ -100,7 +100,7 @@ Month_FirstDayOfMonth3=
 DayClass=,
 [Opportunity Status]=,
 //[Date] = {'<=$(Today()-7)'}
-[Date] = {'<=$(=Date(Weekend(today())))'},
+[Date] = {'<=$(=QuarterEnd(today()))'},
 
 [Opportunity Name]=,
 [Opportunity Stage]=,
