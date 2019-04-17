@@ -1,0 +1,120 @@
+(Sum({$< 
+		//"FiscalYear"={2017},
+		"FiscalYear" = {"$(vFY)"},
+		//[Qtr_Fy]=,
+       // YTD=,
+        Date=,
+        //[Date] = {'<=$(=Weekend(Today()-7))'},
+         DateMonth=,
+       Var=,
+       Month_FirstDayOfMonth=,
+       [Project Transaction Revenue Type] = {'Labor Revenue'},
+		[Project Time Category]=,
+        [Project Publish Date]=,
+        [Project Code]=,
+        [Project Name]=,
+        [Project Manager]=,
+        [Project Client Manager]=,
+        [Opportunity Account Name]=,
+        Name_Relative_Chargeability=,
+        [Business Unit Code]=,
+        DayClass=,
+        [Opportunity Status]=,
+		[Service LineShort]=,
+        [Opportunity Name]=,
+[Opportunity Stage]=,
+[Opportunity Sales Lead]=,
+[Opportunity Lead Proposal Writer]=,
+OpportunityId=,
+DateMonth2=,
+[Publish Month]=,
+VarP=,
+VarT=,
+DateMonth3=,
+Month_FirstDayOfMonth3=
+
+        >} [Project Transaction Labor Effort])
+    
+        +
+        
+ Sum({$< 
+ 		//"FiscalYear"={2017},
+		"FiscalYear" = {"$(vFY)"},
+		//[Qtr_Fy]=,
+       // YTD=,
+        Date=,
+        //[Date] = {'<=$(=Weekend(Today()-7))'},
+       
+         DateMonth=,
+       Var=,
+       Month_FirstDayOfMonth=,
+       [Project Transaction Revenue Type] = {'Labor Revenue'},
+		[Project Time Category]=,
+        [Project Publish Date]=,
+        [Project Code]=,
+        [Project Name]=,
+        [Project Manager]=,
+        [Project Client Manager]=,
+        [Opportunity Account Name]=,
+        Name_Relative_Chargeability=,
+        [Business Unit Code]=,
+        DayClass=,
+        [Opportunity Status]=,
+		[Service LineShort]=,
+        [Opportunity Name]=,
+[Opportunity Stage]=,
+[Opportunity Sales Lead]=,
+[Opportunity Lead Proposal Writer]=,
+OpportunityId=,
+
+DateMonth2=,
+[Publish Month]=,
+VarP=,
+VarT=,
+DateMonth3=,
+Month_FirstDayOfMonth3=
+
+        >} [Project Transaction Revenue Adjustment]))
+        /
+        
+        (Sum({$<
+//"FiscalYear"={2017},
+"FiscalYear" = {"$(vFY)"},
+//[Qtr_Fy]=,
+//YTD=,
+  DateMonth=,
+       Var=,
+       Month_FirstDayOfMonth=,
+
+
+[Project Time Category]=,
+[Service LineShort]=,
+[Business Unit Code]=,
+[Project Code]=,
+[Project Name]=,
+[Project Manager]=,
+        [Project Client Manager]=,
+[Opportunity Account Name]=,
+[Project Publish Date]=,
+[Name_Relative_Chargeability]=,
+DayClass=,
+[Opportunity Status]=,
+//[Date] = {'<=$(Today()-7)'}
+[Date] = {'<=$(=Date(Weekend(today())))'},
+
+[Opportunity Name]=,
+[Opportunity Stage]=,
+[Opportunity Sales Lead]=,
+[Opportunity Lead Proposal Writer]=,
+OpportunityId=,
+
+DateMonth2=,
+[Publish Month]=,
+VarP=,
+VarT=,
+DateMonth3=,
+Month_FirstDayOfMonth3=
+
+>}  [FY17 Plan]))
+
+-1
